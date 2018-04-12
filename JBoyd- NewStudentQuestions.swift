@@ -8,9 +8,9 @@ struct QuestionAnswerer {
         } else if  lowerQuestion.contains("rotation") && lowerQuestion.contains("class") {
             return "The class system is a 9 block schedule (A Block through I Block) on constant rotation. The last block each day is the first block the next morning."
             
-        } else if lowerQuestion.contains("break") || lowerQuestion.contains("breaks") || lowerQuestion.contains("lunch") {
+        } else if lowerQuestion.contains("break") || lowerQuestion.contains("lunch") || lowerQuestion.contains("recess") || lowerQuestion.contains("snack") {
             return "Twice a day, students have a 'break.' The first is after their first two blocks in the morning, from 10:15 to 10:35. The second is after their next two blocks, and is their Lunch period, from 12:35 to 1:15. Students are required to be in their next block by the end of break."
-        } else if lowerQuestion.contains("late start")  {
+        } else if lowerQuestion.contains("late start") || lowerQuestion.contains("wednesday") && lowerQuestion.contains("morning") || lowerQuestion.contains("wednesday") && lowerQuestion.contains("start")  {
             return "Every Wednesday the start of the school day is delayed by 35 minutes. On a weekday, school starts at 8:10 each morning, when students should be in advisory. On Wednesdays, this time is pushed back to 8:45, and students skip the first 30 minutes of their first block and morning advisory, meaning they go straight to class in the morning."
         } else if lowerQuestion.contains("community time")  {
             return "After the last block each day, students have “community time” which may entail an assembly, study hall, or advisory meeting."
